@@ -23,21 +23,38 @@
 		function setConfirm(confirmIn){
 		confirm = confirmIn;}
 		function saveAccount(){
-		if(confirm==pass){
-		if (localStorage.getItem('User'+user+'email') != email){
-			localStorage.setItem('User'+ user + 'name', user);               // defining the localStorage variable 
-			localStorage.setItem('User'+ user + 'email', email); 
-			localStorage.setItem('User'+ user + 'pass', pass); 
-			window.alert("Nouveau compte  étudiant:\n\n" + 
-			"Nom : " + localStorage.getItem('User'+ user + 'name') + "\n" +
-			"Email : " + localStorage.getItem('User'+ user + 'email') + "\n" +
-			"Mot de passe : " + localStorage.getItem('User'+ user + 'pass')
-			);  // accessing it 
-			}else{
-			window.alert("Le compte existe déjà");}
-		}else {
-		window.alert("Les deux mots de passes ne sont pas correspondant");
-		}
+		
+			//code copié : http://www.codeproject.com/Tips/492632/Email-Validation-in-JavaScript
+			
+			var validEmail = document.getElementById('email');
+			var filter = /.+@+./
+			
+			if (!filter.test(validEmail.value)) {
+				alert('Please provide a valid email address');
+				email.focus;
+				return false;
+			}
+			//termine ici
+		
+			if(confirm==pass){
+				
+				if (localStorage.getItem('User'+user+'email') != email){
+					localStorage.setItem('User'+ user + 'name', user);               // defining the localStorage variable 
+					localStorage.setItem('User'+ user + 'email', email); 
+					localStorage.setItem('User'+ user + 'pass', pass); 
+					window.alert("Nouveau compte  étudiant:\n\n" + 
+					"Nom : " + localStorage.getItem('User'+ user + 'name') + "\n" +
+					"Email : " + localStorage.getItem('User'+ user + 'email') + "\n" +
+					"Mot de passe : " + localStorage.getItem('User'+ user + 'pass')
+					);  // accessing it 
+				}
+				else{
+					window.alert("Le compte existe déjà");
+				}
+			}
+			else{
+				window.alert("Les deux mots de passes ne sont pas correspondant");
+			}
 			//alert("Hello " + localStorage.fullname);                     // another way of accessing the variable 
 			//localStorage.removeItem('fullname');    
 		}
@@ -63,7 +80,7 @@
 						<br>
 						Adresse courriel :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
+						<input type="text" id='email' class="ButtonCompteCss" value="" onchange="setEmail(value);">
 						<br>
 						Mot de passe :
 						<br>
