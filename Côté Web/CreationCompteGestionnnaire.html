@@ -23,19 +23,6 @@
 		function setConfirm(confirmIn){
 		confirm = confirmIn;}
 		function saveAccount(){
-		
-		//code copié : http://www.codeproject.com/Tips/492632/Email-Validation-in-JavaScript
-			
-			var validEmail = document.getElementById('email');
-			var filter = /.+@+./
-			
-			if (!filter.test(validEmail.value)) {
-				alert('Please provide a valid email address');
-				email.focus;
-				return false;
-			}
-			//termine ici
-		
 		if(confirm==pass){
 		if (localStorage.getItem('Gestio'+user+'email') != email){
 			localStorage.setItem('Gestio'+ user + 'name', user);               // defining the localStorage variable 
@@ -76,7 +63,7 @@
 						<br>
 						Adresse courriel :
 						<br>
-						<input id='email' type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
+						<input type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
 						<br>
 						Mot de passe :
 						<br>
