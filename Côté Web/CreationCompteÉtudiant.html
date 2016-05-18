@@ -6,6 +6,43 @@
 
     <link href="./Modele.css" rel="stylesheet" type="text/css"/>
 	
+	<script>
+		var user;
+		function setUser(nomIn){
+			user = nomIn;
+		}
+		var email;
+		function setEmail(mailIn){
+			email = mailIn;
+		}
+		var pass;
+		function setPass(passIn){
+			pass = passIn;
+		}
+		var confirm;
+		function setConfirm(confirmIn){
+		confirm = confirmIn;}
+		function saveAccount(){
+		if(confirm==pass){
+		if (localStorage.getItem('User'+user+'email') != email){
+			localStorage.setItem('User'+ user + 'name', user);               // defining the localStorage variable 
+			localStorage.setItem('User'+ user + 'email', email); 
+			localStorage.setItem('User'+ user + 'pass', pass); 
+			window.alert("Nouveau compte  étudiant:\n\n" + 
+			"Nom : " + localStorage.getItem('User'+ user + 'name') + "\n" +
+			"Email : " + localStorage.getItem('User'+ user + 'email') + "\n" +
+			"Mot de passe : " + localStorage.getItem('User'+ user + 'pass')
+			);  // accessing it 
+			}else{
+			window.alert("Le compte existe déjà");}
+		}else {
+		window.alert("Les deux mots de passes ne sont pas correspondant");
+		}
+			//alert("Hello " + localStorage.fullname);                     // another way of accessing the variable 
+			//localStorage.removeItem('fullname');    
+		}
+	</script>
+	
 </head>
 
 	<body class="TextPageCss"> <!---->
@@ -19,26 +56,29 @@
 			<div align="Left">
 				<fieldset class="ButtonCompteCss" >
 				<legend class="TextTitreCss">Creation d'un compte étudiant :</legend>
-<form action="CompteCrÉÉ.html">
 				<br>
+						Nom :
+						<br>
+						<input type="text" class="ButtonCompteCss" value="" onchange="setUser(value);">
+						<br>
 						Adresse courriel :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="" name="Adresse">
+						<input type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
 						<br>
 						Mot de passe :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="">
+						<input type="text" class="ButtonCompteCss" value="" onchange="setPass(value);">
 						<br>
-						
 						Comfirmer le mot de passe :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="">
+						<input type="text" class="ButtonCompteCss" value="" onchange="setConfirm(value)">
 						<br>
 						<br>
+						
+						
 						<a href="index.html">
-							<input type="submit" class="ButtonCompteCss" value="Comfirmer">
+							<input type="button" class="ButtonCompteCss" value="Comfirmer" onclick="saveAccount();">
 						</a>
-</form>
 				</fieldset>
 			</div>
 		</div>

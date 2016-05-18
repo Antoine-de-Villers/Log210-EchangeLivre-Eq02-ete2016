@@ -6,6 +6,63 @@
 
 	<link href="./Modele.css" rel="stylesheet" type="text/css"/>
 	
+	<script>
+		var user;
+		function setUser(nomIn){
+			user = nomIn;
+		}
+		var email;
+		function setEmail(mailIn){
+			email = mailIn;
+		}
+		var pass;
+		function setPass(passIn){
+			pass = passIn;
+		}
+		var typeCompte;
+		function checkAccount(){
+			//localStorage.setItem('User'+ user + 'name', user);               // defining the localStorage variable 
+			//localStorage.setItem('User'+ user + 'email', email); 
+			//localStorage.setItem('User'+ user + 'pass', pass); 
+			if (localStorage.getItem('Gestio'+ user + 'name') == null){
+				if (localStorage.getItem('User'+ user + 'name') == null){
+					window.alert("Ce compte nexiste pas.");
+				}
+				else{
+					typeCompte = "User";
+					Authentifie();
+				}
+			}
+			else{
+				typeCompte = "Gestio";
+				Authentifie();
+			}
+			//alert("Hello " + localStorage.fullname);                     // another way of accessing the variable 
+			//localStorage.removeItem('fullname');    
+		}
+		var specUser = "";
+		function Authentifie(){
+			if (localStorage.getItem(typeCompte + user + 'email') == email && localStorage.getItem(typeCompte + user + 'pass') == pass){
+				if (typeCompte == "User"){
+					specUser = "Compte étudiant :\n\n";
+				}
+				if (typeCompte == "Gestio"){
+					specUser = "Compte gestionnaire :\n\n";
+				}
+				window.alert("Connecter !\n\n" + 
+				specUser +
+				"Nom : " + localStorage.getItem(typeCompte + user + 'name') + "\n" +
+				"Email : " + localStorage.getItem(typeCompte + user + 'email') + "\n" +					
+				"Mot de passe : " + localStorage.getItem(typeCompte + user + 'pass')
+				);  // accessing it
+			}
+			else{
+				window.alert("Mauvais email ou mot de passe.");
+			}
+		}
+	</script>
+	
+	
 </head>
 
 	<body class="TextPageCss"> <!---->
@@ -17,6 +74,25 @@
 			</a>
 			
 			<div align="Left">
+				<fieldset class="TextInfoCss" >
+				<legend class="TextTitreCss">Connection :</legend>
+				<br>
+						Nom :
+						<br>
+						<input type="text" class="ButtonCompteCss" value="" onchange="setUser(value);">
+						<br>
+						Adresse courriel :
+						<br>
+						<input type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
+						<br>
+						Mot de passe :
+						<br>
+						<input type="text" class="ButtonCompteCss" value="" onchange="setPass(value);">
+						<br>
+						<input type="button" class="ButtonCompteCss" value="Connection" onclick="checkAccount();">
+						
+				</fieldset>
+				<br>
 				<fieldset class="TextInfoCss" >
 				<legend class="TextTitreCss">Selectionner un compte à créé :</legend>
 				<br>
