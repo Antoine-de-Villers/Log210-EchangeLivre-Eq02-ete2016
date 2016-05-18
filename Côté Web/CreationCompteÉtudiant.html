@@ -56,6 +56,7 @@
 			<div align="Left">
 				<fieldset class="ButtonCompteCss" >
 				<legend class="TextTitreCss">Creation d'un compte étudiant :</legend>
+				<form>
 				<br>
 						Nom :
 						<br>
@@ -63,11 +64,11 @@
 						<br>
 						Adresse courriel :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="" onchange="setEmail(value);">
+						<input type="email" class="ButtonCompteCss" value="" onchange="setEmail(value);">
 						<br>
 						Mot de passe :
 						<br>
-						<input type="text" class="ButtonCompteCss" value="" onchange="setPass(value);">
+						<input type="password" class="ButtonCompteCss" value="" onchange="setPass(value);">
 						<br>
 						Comfirmer le mot de passe :
 						<br>
@@ -77,8 +78,9 @@
 						
 						
 						<a href="index.html">
-							<input type="button" class="ButtonCompteCss" value="Comfirmer" onclick="saveAccount();">
+							<input type="submit" class="ButtonCompteCss" value="Comfirmer" onclick="saveAccount();">
 						</a>
+						</form>
 				</fieldset>
 			</div>
 		</div>
