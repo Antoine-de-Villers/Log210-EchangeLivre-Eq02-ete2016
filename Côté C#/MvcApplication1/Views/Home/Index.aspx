@@ -8,8 +8,7 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>Accueil.</h1>
-                <h2><%: ViewBag.Message %></h2>
+                <h1>Home Page.</h1>
             </hgroup>
             <p>
                 L'échange de livre d'éts est une application web simple pour ventre ou échanger des livre usager ainsi 
