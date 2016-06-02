@@ -132,7 +132,6 @@ C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcAppl
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\System.Web.WebPages.xml
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\System.Web.WebPages.Razor.xml
-C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\WebMatrix.Data.xml
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\Microsoft.Web.WebPages.OAuth.xml
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\WebMatrix.WebData.xml
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\DotNetOpenAuth.AspNet.xml
@@ -156,7 +155,6 @@ C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcAppl
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\System.Web.WebPages.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\System.Web.WebPages.Razor.resources.dll
-C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\WebMatrix.Data.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\Microsoft.Web.WebPages.OAuth.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\WebMatrix.WebData.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\fr\System.Web.Http.OData.resources.dll
@@ -187,6 +185,5 @@ C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcAppl
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\ru\System.Spatial.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.dll
 C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.pdb
