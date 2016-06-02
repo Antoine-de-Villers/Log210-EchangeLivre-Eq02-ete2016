@@ -11,7 +11,7 @@
                 <h1>Home Page.</h1>
             </hgroup>
             <p>
-                L'échange de livre d'éts est une application web simple pour ventre ou échanger des livre usager ainsi 
+                L'échange de livres d'éts est une application web simple pour ventre ou échanger des livre usager ainsi 
                 qu'achetter des livre de la coop.
                 <%--To learn more about ASP.NET MVC visit
                 <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
