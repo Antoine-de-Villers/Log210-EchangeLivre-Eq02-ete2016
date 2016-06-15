@@ -16,6 +16,7 @@ namespace MvcApplication1.Models
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<AdminProfile> AdminProfiles { get; set; }
     }
 
     [Table("UserProfile")]
@@ -25,6 +26,17 @@ namespace MvcApplication1.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+    }
+
+    [Table("AdminProfile")]
+    public class AdminProfile
+    {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public string CoopName { get; set; }
+        public string adresse { get; set; }
     }
 
     public class RegisterExternalLoginModel
