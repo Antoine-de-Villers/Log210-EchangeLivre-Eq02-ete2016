@@ -23,7 +23,7 @@ namespace MvcApplication1.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(UserProfile modelU,OffreLivre modelO, string returnUrl)
+        public ActionResult Depot(UserProfile modelU,OffreLivre modelO, string returnUrl)
         {
 
 
