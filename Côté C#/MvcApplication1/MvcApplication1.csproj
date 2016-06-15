@@ -185,11 +185,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OffreController.cs" />
+    <Compile Include="Controllers\VenteController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\VenteModels.cs" />
     <Compile Include="Models\OffreModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

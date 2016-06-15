@@ -19,7 +19,14 @@ namespace MvcApplication1.Controllers
         //
         //POST: /Vente
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EffectuerVente(EffectuerVenteModel model)
+        {
 
+
+
+        }
 
     }
 }
