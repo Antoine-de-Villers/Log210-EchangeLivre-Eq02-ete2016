@@ -17,6 +17,7 @@ namespace MvcApplication1.Models
 
         public DbSet<OffreLivre> OffreLivres { get;}
         public DbSet<UserProfile> UserProfiles { get;}
+
     }
 
 
