@@ -30,7 +30,7 @@
                     <%: Html.ValidationMessageFor(m => m.Prix) %>
                 </li>          
             </ol>
-            <input type="submit" value="Dépot" />
+            <input type="submit" value="Depot" />
         </fieldset>
     <% } %>
 

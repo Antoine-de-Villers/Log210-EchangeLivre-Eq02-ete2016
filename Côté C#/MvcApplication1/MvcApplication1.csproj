@@ -183,6 +183,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DepotController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OffreController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -281,7 +282,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Views\LoggedAsCoop\Dépot de livre.aspx" />
+    <Content Include="Views\LoggedAsCoop\Depot.aspx" />
     <Content Include="Views\LoggedAsCoop\Index.aspx" />
     <Content Include="Views\LoggedAsStudent\Index.aspx" />
     <Content Include="Views\Offre\Ajouter.aspx" />
