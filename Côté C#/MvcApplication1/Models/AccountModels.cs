@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Globalization;
 using System.Web.Security;
+using System.Web.UI.WebControls;
 
 namespace MvcApplication1.Models
 {
@@ -99,11 +100,11 @@ namespace MvcApplication1.Models
         [Compare("Password", ErrorMessage = "Le mot de passe et le mot de passe de confirmation ne correspondent pas.")]
         public string ConfirmPassword { get; set; }
 
-       [Display(Name = "Le nom de votre Coopérative ")]
-       public string CoopName { get; set;}
+        [Display(Name = "Le nom de votre Coopérative ")]
+        public string CoopName { get; set;}
 
         [Display(Name = "Type de compte")]
-        public string TypeDeCompte { get; set; }
+        public RadioButton TypeDeCompte { get; set; }
     }
 
     public class ExternalLogin
