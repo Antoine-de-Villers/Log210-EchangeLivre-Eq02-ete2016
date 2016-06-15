@@ -99,9 +99,11 @@ namespace MvcApplication1.Models
         [Compare("Password", ErrorMessage = "Le mot de passe et le mot de passe de confirmation ne correspondent pas.")]
         public string ConfirmPassword { get; set; }
 
-        [Required]
+       [Display(Name = "Le nom de votre Coopérative ")]
+       public string CoopName { get; set;}
 
-        
+        [Display(Name = "Type de compte")]
+        public string TypeDeCompte { get; set; }
     }
 
     public class ExternalLogin
