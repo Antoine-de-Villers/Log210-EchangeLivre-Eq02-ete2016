@@ -100,6 +100,7 @@ namespace MvcApplication1.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
+
         
     }
 
