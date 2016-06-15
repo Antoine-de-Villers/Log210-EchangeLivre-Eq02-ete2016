@@ -29,6 +29,16 @@
                     <%: Html.LabelFor(m => m.ConfirmPassword) %>
                     <%: Html.PasswordFor(m => m.ConfirmPassword) %>
                 </li>
+                <li>
+                   <%: Html.LabelFor(m => m.CoopName) %>
+                    <%: Html.TextBoxFor(m => m.CoopName) %>
+                </li>
+                <li>
+                    <%: Html.LabelFor(m => m.TypeDeCompte) %>
+                    <%: Html.RadioButtonFor(m => m.TypeDeCompte, "E") %> Étudiant
+                    <%: Html.RadioButtonFor(m => m.TypeDeCompte, "G") %> Gestionnaire de Coopérative
+                </li>
+
             </ol>
             <input type="submit" value="S'inscrire" />
         </fieldset>
