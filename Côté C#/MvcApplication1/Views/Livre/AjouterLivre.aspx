@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MvcApplication1.Models.AjouterOffreModel>" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<MvcApplication1.Models.AjouterLivreModel>" %>
 
 <asp:Content ID="loginTitle" ContentPlaceHolderID="TitleContent" runat="server">
-    Ajouter une offre
+    Ajouter un livre
 </asp:Content>
 
 <asp:Content ID="loginContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -10,7 +10,7 @@
     </hgroup>
 
     <section id="loginForm">
-    <h2>Ajouter une offre de livre.</h2>
+    <h2>Ajouter un livre au système.</h2>
     <% using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) { %>
         <%: Html.AntiForgeryToken() %>
         <%: Html.ValidationSummary(true) %>
@@ -39,23 +39,9 @@
                     <%: Html.ValidationMessageFor(m => m.NuméroÉdition) %>
                 </li>
                 <li>
-                    <%: Html.LabelFor(m => m.ÉtatLivre) %>
-                    <%: Html.TextBoxFor(m => m.ÉtatLivre) %>
-                    <%: Html.ValidationMessageFor(m => m.ÉtatLivre) %>
-                </li>
-                <li>
-                    <%: Html.LabelFor(m => m.Prix) %>
-                    <%: Html.TextBoxFor(m => m.Prix) %>
-                    <%: Html.ValidationMessageFor(m => m.Prix) %>
-                </li>
-                <li>
-                    <%: Html.LabelFor(m => m.Cours) %>
-                    <%: Html.TextBoxFor(m => m.Cours) %>
-                    <%: Html.ValidationMessageFor(m => m.Cours) %>
-                </li>
-                <li>
-                    <%: Html.CheckBoxFor(m => m.EstVente) %>
-                    <%: Html.LabelFor(m => m.EstVente, new { @class = "checkbox" }) %>
+                    <%: Html.LabelFor(m => m.NbPage) %>
+                    <%: Html.TextBoxFor(m => m.NbPage) %>
+                    <%: Html.ValidationMessageFor(m => m.NbPage) %>
                 </li>
             </ol>
             <input type="submit" value="Ajouter" />

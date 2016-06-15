@@ -25,10 +25,7 @@ namespace MvcApplication1.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public string Titre { get; set; }
-        public string Auteur { get; set; }
         public int Isbn { get; set; }
-        public int NuméroÉdition { get; set; }
         public string ÉtatLivre { get; set; }
         public bool EstVente { get; set; }
         public float Prix { get; set; }
@@ -37,21 +34,33 @@ namespace MvcApplication1.Models
 
     public class AjouterOffreModel
     {
-        [Required]
-        [Display(Name = "Titre")]
-        public string Titre { get; set; }
-
-        [Required]
-        [Display(Name = "Auteur")]
-        public string Auteur { get; set; }
-
-        [Required]
         [Display(Name = "Isbn")]
         public int Isbn { get; set; }
 
-        [Required]
+        [Display(Name = "Titre")]
+        public string Titre { get; set; }
+
+        [Display(Name = "Auteur")]
+        public string Auteur { get; set; }
+
+
         [Display(Name = "Numéro d'édition")]
         public int NuméroÉdition { get; set; }
+
+
+        [Display(Name = "Nombre de page")]
+        public int NbPage { get; set; }
+
+
+        public AjouterOffreModel() { }
+        public AjouterOffreModel(int isbn, string titre, string auteur, int numeroDedition, int nbPage)
+        {
+            Isbn = isbn;
+            Titre = titre;
+            Auteur = auteur;
+            NuméroÉdition = numeroDedition;
+            NbPage = nbPage;
+        }
 
         [Required]
         [Display(Name = "État physique du livre")]
@@ -68,5 +77,13 @@ namespace MvcApplication1.Models
         [Required]
         [Display(Name = "Cours")]
         public string Cours { get; set; }
+    }
+
+    public class RechercherLivreModel
+    {
+        [Required]
+        [Display(Name = "Isbn")]
+        public int Isbn { get; set; }
+
     }
 }

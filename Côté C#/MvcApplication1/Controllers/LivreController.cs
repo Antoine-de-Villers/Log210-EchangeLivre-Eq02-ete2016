@@ -14,14 +14,14 @@ using MvcApplication1.Models;
 namespace MvcApplication1.Controllers
 {
     //[Authorize]
-    public class OffreController : Controller
+    public class LivreController : Controller
     {
 
         //
         // GET: /Ajouter offre
 
         [AllowAnonymous]
-        public ActionResult DémarrerOffre()
+        public ActionResult AjouterLivre()
         {
             return View();
         }
@@ -31,85 +31,30 @@ namespace MvcApplication1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult DémarrerOffre(RechercherLivreModel model)
+        public ActionResult AjouterLivre(AjouterLivreModel model)
         {
-            //string tempTitre;
-            //string tempTitre;
-            //string tempTitre;
-            //string tempTitre;
-            //string tempTitre;
             if (ModelState.IsValid)
             {
-                // Tentative d'e recherche de livre pour le isbn
-                try
+                using (LivreContext db = new LivreContext())
                 {
-                    Livre livre;
-                    // Recherche le livre dans la base de données
-                    using (LivreContext db = new LivreContext())
+                    // Insérer les atributs dans la table des offres
+                    db.Livres.Add(new Livre
                     {
-                        livre = db.Livres.Find(model.Isbn);
-
-
-                        //// Insérer les atributs dans la table des offres
-                        //db.OffreLivres.Add(new OffreLivre
-                        //{
-                        //    Isbn = model.Isbn
-                        //});
-                        //db.SaveChanges();
-
-                    }
-
-
-                    return RedirectToAction("AjouterOffre", new { isbn = model.Isbn, titre = livre.Titre,  auteur = livre.Auteur,  numeroDedition = livre.NuméroÉdition, nbPage = livre.NbPage });
-                    //return RedirectToAction("AjouterOffre", model.Isbn);
-                }
-                catch
-                {
+                        Titre = model.Titre,
+                        Auteur = model.Auteur,
+                        Isbn = model.Isbn,
+                        NuméroÉdition = model.NuméroÉdition,
+                        NbPage = model.NbPage
+                    });
+                    db.SaveChanges();
 
                 }
-            }
 
-            // Si nous sommes arrivés là, quelque chose a échoué, réafficher le formulaire
-            return View(model);
-        }
-
-        //
-        // GET: /Ajouter offre
-
-        [AllowAnonymous]
-        public ActionResult AjouterOffre(int isbn, string titre, string auteur, int numeroDedition, int nbPage)
-        {
-            return View(new AjouterOffreModel(isbn, titre, auteur, numeroDedition, nbPage));
-        }
-
-        //
-        // POST: /Ajouter offre
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult AjouterOffre(AjouterOffreModel model)
-        {
-            if (ModelState.IsValid)
-            {
                 // Tentative d'ajout d'un offre
                 try
                 {
                     // Insérer un nouvel offre dans la base de données
-                    using (OffreContext db = new OffreContext())
-                    {
-
-                        // Insérer les atributs dans la table des offres
-                        db.OffreLivres.Add(new OffreLivre
-                        {
-                            Isbn = model.Isbn,
-                            ÉtatLivre = model.ÉtatLivre,
-                            EstVente = model.EstVente,
-                            Prix = model.Prix,
-                            Cours = model.Cours
-                        });
-                        db.SaveChanges();
-
-                    }
+                    
 
                     return RedirectToAction("Index", "Home");
                 }

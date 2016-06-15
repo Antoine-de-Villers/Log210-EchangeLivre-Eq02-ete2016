@@ -179,12 +179,14 @@
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\DataBaseMigration.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DepotController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LivreController.cs" />
     <Compile Include="Controllers\OffreController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,6 +195,7 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Depot.cs" />
     <Compile Include="Models\OffreModels.cs" />
+    <Compile Include="Models\LivreModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -286,7 +289,9 @@
     <Content Include="Views\LoggedAsCoop\Depot.aspx" />
     <Content Include="Views\LoggedAsCoop\Index.aspx" />
     <Content Include="Views\LoggedAsStudent\Index.aspx" />
-    <Content Include="Views\Offre\Ajouter.aspx" />
+    <Content Include="Views\Livre\AjouterLivre.aspx" />
+    <Content Include="Views\Offre\DémarrerOffre.aspx" />
+    <Content Include="Views\Offre\AjouterOffre.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
