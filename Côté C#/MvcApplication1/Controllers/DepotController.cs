@@ -12,7 +12,7 @@ namespace MvcApplication1.Controllers
         //
         // GET: /Depot/
 
-        public ActionResult Index()
+        public ActionResult Depot()
         {
             return View();
         }

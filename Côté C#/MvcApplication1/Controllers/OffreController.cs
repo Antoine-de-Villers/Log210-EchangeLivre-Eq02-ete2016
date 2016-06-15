@@ -21,7 +21,7 @@ namespace MvcApplication1.Controllers
         // GET: /Ajouter offre
 
         [AllowAnonymous]
-        public ActionResult AjouterOffre()
+        public ActionResult Ajouter()
         {
             return View();
         }
@@ -31,7 +31,7 @@ namespace MvcApplication1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AjouterOffre(AjouterOffreModel model)
+        public ActionResult Ajouter(AjouterOffreModel model)
         {
             if (ModelState.IsValid)
             {
