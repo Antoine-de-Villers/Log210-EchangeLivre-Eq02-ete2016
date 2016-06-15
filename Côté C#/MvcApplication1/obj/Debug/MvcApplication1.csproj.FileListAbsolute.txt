@@ -279,3 +279,4 @@ C:\Users\AN03980\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcAppl
 C:\Users\AN03980\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
 C:\Users\AN03980\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.dll
 C:\Users\AN03980\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.pdb
+C:\Users\Antoine\Source\Repos\Log210-EchangeLivre-Eq02-ete2016\Côté C#\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache

@@ -24,31 +24,23 @@
 </asp:Content>
 
 <asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h3>We suggest the following:</h3>
+    <h3>Voici ce que vous pouvez faire</h3>
     <ol class="round">
         <li class="one">
-            <h5>Getting Started</h5>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and that gives you full control over markup
-            for enjoyable, agile development. ASP.NET MVC includes many features that enable
-            fast, TDD-friendly development for creating sophisticated applications that use
-            the latest web standards.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245151">Learn more…</a>
+            <h5>Partir du bon pied!</h5>
+           Sur ce site, vous pourrez faire l'échange de livre facilement en utilisant la Coop. 
         </li>
 
 
 
         <li class="two">
-            <h5>Add NuGet packages and jump-start your coding</h5>
-            NuGet makes it easy to install and update free libraries and tools.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245153">Learn more…</a>
+            <h5>Créez vos offres</h5>
+           Vous pourrez créer vos propres offres de livre!
         </li>
 
         <li class="three">
-            <h5>Find Web Hosting</h5>
-            You can easily find a web hosting company that offers the right mix of features
-            and price for your applications.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245157">Learn more…</a>
+            <h5>Récupération sur place</h5>
+            Faites affaire avec votre Coop pour récupérer vos livres sur place grâce à un système d'étiquette!
         </li>
     </ol>
 </asp:Content>
